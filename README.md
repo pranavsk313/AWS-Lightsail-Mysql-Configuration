@@ -52,6 +52,7 @@ Click on the "Create instance" button.
 Follow these steps to deploy a MySQL database on Amazon Lightsail:  
     - Follow the prompts to set up the MySQL database.
     - Choose additional configurations such as database size and user credentials.
+    
 ![4](https://github.com/pranavsk313/AWS-Lightsail-Mysql-Configuration/assets/122976840/7065dc12-b6e1-464c-bf33-5e4d1562d099)
 
 ![5](https://github.com/pranavsk313/AWS-Lightsail-Mysql-Configuration/assets/122976840/edf912e2-8733-4724-8761-7384a41aea8d)
@@ -87,11 +88,17 @@ sudo apt install mysql-client
 ```bash
 mysql -u dbmasteruser -h <Endpoint of MYSQL> -P 3306 -p
 ```
+To create new Database
+```
+create database pranavdb;
+```
 
-
+To check created databases
 ```
 Show databases;
 ```
+![10](https://github.com/pranavsk313/AWS-Lightsail-Mysql-Configuration/assets/122976840/0d552262-f2a5-4088-a7f0-4c4350a0e301)
+
 ### 5. View Database Metrics
 
 Monitor the performance of your MySQL database by viewing database metrics:
